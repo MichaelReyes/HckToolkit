@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:hackathon_toolkit/app/landing_page/landing_page.dart';
+import 'package:hackathon_toolkit/app/services/auth.dart';
 import 'package:hackathon_toolkit/app/sign_in/sign_in_page.dart';
 
 void main() async {
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: SignInPage(),
+      home: LandingPage(auth: Auth()),
     );
   }
 }
